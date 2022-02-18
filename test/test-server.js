@@ -25,7 +25,7 @@ describe('GET /', function () {
         if (err) {
           return done(err);
         }
-        chai.assert.isTrue(res.text.includes("<h1>Welcome to Team2 - Cloud Event Manager's application</h1>"));
+        chai.assert.isTrue(res.text.includes("<h1  style="text-align: center;">Welcome to Team2 - Cloud Event Manager's application</h1>"));
         return done();
       });
 
